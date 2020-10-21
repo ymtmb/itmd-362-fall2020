@@ -3,7 +3,7 @@
 <head>
   <title>HTML Form Elements</title>
   <meta charset="utf-8" />
-  <meta name="viewport" />
+  <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
@@ -16,11 +16,12 @@
     <ol>
       <li id="input-email">
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" pattern="^.+@.+$" />
+        <input type="email" name="email" id="email" pattern="^.+@.+$" size="30"/>
       </li>
       <li id="input-age-verification">
+	    <label for="age-verification">I am over 18 years old
         <input type="checkbox" id="age-verification" name="age-verification" value="18" />
-        <label for="age-verification">I am over 18 years old</label>
+        </label>
       </li>
       <li id="input-submit">
         <input type="submit" name="submit" id="submit" value="Subscribe" />
