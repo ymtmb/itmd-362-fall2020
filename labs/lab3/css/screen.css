@@ -209,7 +209,7 @@ label {
 
 /* ===== MODULAR STYLES ===== */
 body { /*Applied Body styles for Lab */
-  font-family: 'Josefin Sans', sans-serif, "Segoe UI", Roboto, Helvetica;
+  font-family: 'Archivo Narrow', Tahoma, sans-serif, "Segoe UI", Roboto, Helvetica;
   background-color: #d3f5ef;
   margin-right: auto;
   margin-left: auto;
@@ -221,9 +221,10 @@ h1,p,li {
   padding: 10px;
 }
 
+
 input {
   border: none;
-  font-family: 'Josefin Sans', sans-serif, "Segoe UI", Roboto, Helvetica;
+  font-family: 'Raleway', sans-serif, "Segoe UI", Roboto, Helvetica;
   padding: 15px 15px;
   border-radius: 10px;
 }
