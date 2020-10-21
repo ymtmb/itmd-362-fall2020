@@ -1,3 +1,8 @@
+/* Lab Additions to CSS */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -21,11 +26,11 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
+
 
 /**
  * Show the overflow in IE.
@@ -192,8 +197,6 @@ img, audio, video {
 */
 
 html {
-  font-size: 1.375em; /* 22px */
-  line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
   text-rendering: optimizeLegibility;
 }
@@ -205,6 +208,60 @@ label {
 /* ===== LAYOUT STYLES ====== */
 
 /* ===== MODULAR STYLES ===== */
+body { /*Applied Body styles for Lab */
+  font-family: 'Josefin Sans', sans-serif, "Segoe UI", Roboto, Helvetica;
+  background-color: #d3f5ef;
+  margin-right: auto;
+  margin-left: auto;
+  text-shadow: 1.5px 1.5px #bf8eb7;
+}
 
+h1,p,li {
+  display: block;
+  padding: 10px;
+}
+
+input {
+  border: none;
+  font-family: 'Josefin Sans', sans-serif, "Segoe UI", Roboto, Helvetica;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+
+#submit {
+  padding: 5px 15px;
+  border-radius: 10px;
+}
 /* ===== STATE STYLES ======= */
+@media only screen and (min-width: 1050px) { /*Desktop Devices*/
+  body {
+    margin: auto;
+	width: 50%;
+	text-align: center;
 
+  }
+  h1,p,li {
+	line-height: 1.5em; 
+	font-size: 2em; 
+  }
+  input[type=checkbox] {
+	width: .75em;
+	height: .75em;
+  }
+}
+
+@media only screen and (max-width: 1050px) { /*Mobile Devices*/
+  h1,p,label,#submit {
+	line-height: 1.2em;
+	font-size: 1.5em; 
+	margin-bottom: 1em;
+
+  }
+  input[type=checkbox] {
+	width: 1em;
+	height: 1em;
+  }
+  #email {
+    font-size:1em;
+  }
+}
